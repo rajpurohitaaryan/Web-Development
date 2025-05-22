@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+:root{
+    --colour: rgb(234, 0, 255) ;
+    --secolour: rgb(0, 0, 0);
+}
+body{
+    background-color:var(--colour);
+}
+nav{
+    background-color: var(--secolour);
+}
+nav ul{
+    color: white;
+    list-style-type: none;
+    font-size: large;
+    display: flex;
+    padding: 15px;
+}
+li {
+    margin: 0 130px
+}
+

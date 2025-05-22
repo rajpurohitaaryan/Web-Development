@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+
+}
+.sticky {
+    padding: 32px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    position: fixed;
+    background-color: rgb(151, 187, 21);
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+}
+nav{
+    background-color: rgb(255, 230, 0);
+}
+header{
+    position: sticky;
+    top:0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+li{
+    font-size: larger;
+    margin-left: 170px;
+}
+.main{
+    background-color: darkmagenta;
+    padding: 100px;
+}
+.box1{
+    margin-left: 30px;
+    display: inline-block;
+    background-color: blue;
+    width: 500px;
+    border: 1px solid blue;
+    height: 500px;
+    border-radius: 80px;
+}
+.box2{
+    margin-left: 50px;
+    display: inline-block;
+    background-color: lime;
+    width: 500px;
+    border: 1px solid lime;
+    height: 500px;
+    border-radius: 80px;
+}
+article{
+    font-size: x-large;
+    margin: 5px;
+    background-color:dimgrey;
+    text-align: center;
+    padding: 100px;
+    border: 5px solid dimgray;
+    border-radius: 50px;
+}
+.footer{
+    font-size: large;
+    background-color:rgb(252, 81, 81) ;
+    text-align: center;
+    padding: 30px;
+}
