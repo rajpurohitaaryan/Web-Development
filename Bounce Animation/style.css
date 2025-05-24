@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(255, 54, 54);
+    width: 70vw;
+    height: 70vh;
+}
+
+.ball {
+    width: 7vw;
+    height: 14vh;
+    background-color: blue;
+    align-self: flex-end;
+    border: none;
+    border-radius: 100px;
+    animation: Hello1 1s ease-in-out ,
+        Hello2 1s ease-in-out 1s ,
+        Hello3 1s ease-in-out 2s ,
+        Hello4 1s ease-in-out 3s ,
+        Hello5 1s ease-in-out 4s ,
+        Hello6 1s ease-in-out 5s ;
+
+}
+
+@keyframes Hello1 {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(8vw,-40vh);
+    }
+}
+
+@keyframes Hello2 {
+    from {
+        transform: translate(8vw,-40vh);
+    }
+
+    to {
+        transform: translate(16vw, 0);
+    }
+}
+@keyframes Hello3 {
+    from {
+        transform: translate(16vw,0vh);
+    }
+
+    to {
+        transform: translate(24vw,-30vh);
+    }
+}
+@keyframes Hello4 {
+    from {
+        transform: translate(24vw,-30vh);
+    }
+
+    to {
+        transform: translate(32vw,0);
+    }
+}
+@keyframes Hello5 {
+    from {
+        transform: translate(32vw,0vh);
+    }
+
+    to {
+        transform: translate(40vw,-30vh);
+    }
+}
+@keyframes Hello6 {
+    from {
+        transform: translate(40vw,-30vh);
+    }
+
+    to {
+        transform: translate(48vw,40vh);
+    }
+}
