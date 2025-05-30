@@ -41,11 +41,3 @@ createcard(
     "208K",
     "1 year"
 )
-createcard(
-    "https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ",
-    "23:48",
-    "Inserting and Removing Elements using JavaScript | Sigma Web Development Course - Tutorial #71",
-    "CodeWithHarry",
-    "208K",
-    "1 year"
-)
