@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.invert-img {
+    filter: invert(1);
+}
+
+.nav{
+    gap: 180px;
+    padding: 10px;
+}
+.navbar-leftside{
+    align-self: flex-start;
+    gap: 10px;   
+    justify-content: center ;
+    align-items: center; 
+}
+.navbar-rightside{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #1f1f1f;
+}
+.navbar-logo-box{
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.navbar-home-box{
+    border: none;
+    background-color: #1f1f1f;
+    padding: 13px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.navbar-home-box:hover{
+    filter: brightness(200%) contrast(1); 
+    transition: filter 0.2s ease-in-out;
+}
+.navbar-search-box{
+    border: 1px solid #1f1f1f;
+    background-color: #1f1f1f;
+    padding: 9px;
+    border-radius: 100px;
+    gap: 10px;
+}
+.navbar-search-box:hover{
+    filter: brightness(150%);
+}
+.navbar-search-box{
+    justify-content: center;
+    align-items: center;
+}
+.navbar-search-box-text{
+    margin-right: 150px ;
+}
+.navbar-search-box-text-input{
+    border: none;
+    background-color: inherit;
+    font-size: large;
+    font-weight: 400;
+    outline: none;
+}
+.hr{
+    margin-right: 10px;
+    width: 1px;
+    height: 25px;
+    background-color: #7c7c7c;
+}
+.navbar-opt-text{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #b3b3b3;
+    font-size: large;
+}
+.navbar-opt{
+    color: #b3b3b3;
+    cursor: pointer;
+}
+.navbar-opt:hover{
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+.navbar-installapp-box{
+    gap: 7px;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+.navbar-installapp-text{
+    color: #b3b3b3;
+}
+.navbar-installapp-box > div:hover{
+    filter: brightness(150%);
+    transition: filter 0.2s ease-in-out;
+}
+.navbar-accountopt{
+    gap: 10px;
+}
