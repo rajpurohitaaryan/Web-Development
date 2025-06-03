@@ -1,3 +1,4 @@
+
 console.log('------Working------');
 //--------------  NAVBAR  -------------
 function create_label_whenhover(text, locationclass) {
@@ -81,9 +82,6 @@ x_button.addEventListener("click", () => {
 }
 )
 
-
-
-
 document.addEventListener("click", () => {
     document.querySelector(".navbar-search-box").style.border = ""
 }
@@ -98,5 +96,71 @@ create_label_whenhover("Browse", ".navbar-browse-box")
 image_color_invert_when_hovered(".navbar-browse-img", ".navbar-browse-box")
 
 //--------------NAVBAR END-------------
+
+
+// Trending Songs
+
+
+function create_card(imgthumb, title) {
+    let card = document.createElement("div")
+    card.classList.add("song")
+    let location = document.querySelector(".trending-songs-cards")
+    card.innerHTML = `<div class="imgbox">
+                        <img src="${imgthumb}" 
+                        width="155px" alt="" class="thumnail">
+                        <img width="45" height="45" src="https://img.icons8.com/ios-filled/100/40C057/circled-play.png" alt="circled-play" class="play-button"/>
+                    </div>
+                    <span>${title}</span>`
+    location.append(card)
+}
+
+create_card("https://i.ytimg.com/vi/XTp5jaRU3Ws/hqdefault.jpg?sqp=-oaymwEwCKgBEF5IWvKriqkDIwgBFQAAiEIYAfABAfgB_gmAAtAFigIMCAAQARgRIGAocjAP&rs=AOn4CLCS8oHldMJljJZbTNFHooNM4fxGEg","Wavy")
+
+document.querySelector(".song").addEventListener("mouseenter", () => {
+    document.querySelector(".play-button").style.opacity = 1
+}
+)
+document.querySelector(".song").addEventListener("mouseleave", () => {
+    document.querySelector(".play-button").style.opacity = 0
+}
+)
+
+function music_player(audiosrc) {
+    let player_box=document.querySelector(".player-box")
+    player_box.style.zIndex=1000
+    player_box.style.pointerEvents="auto"
+    player_box.innerHTML=`       
+    <div class="cross-box">
+            <img src="/Big Projects/Spotify Clone/Assests/Images/close.png" alt="" class="cross-button" width="30px">
+        </div>
+        <div class="player">
+        <audio id="audio" src="${audiosrc}" controls></audio>
+        <img width="45" height="45" src="https://img.icons8.com/ios-filled/100/40C057/circled-play.png" alt="circled-play" class="play-but"/>
+        <img width="45" height="45" class="pause-but" src="https://img.icons8.com/?size=100&id=36268&format=png&color=40C057" alt="">
+        </div>`
+    }
+document.querySelector(".song").addEventListener("click",(e) => {
+    music_player("/Big Projects/Spotify Clone/Assests/Songs/WAVY (OFFICIAL VIDEO) KARAN AUJLA ｜ LATEST PUNJABI SONGS 2024.mp3")
+    e.stopPropagation()
+}
+)
+document.querySelector(".cross-box").addEventListener("click",() => {
+    document.querySelector(".player-box").style.zIndex=0
+    player_box.style.pointerEvents="none"
+}
+)
+document.querySelector(".play-but").addEventListener("click",(e) => {
+    document.querySelector(".play-but").style.zIndex=0
+    document.querySelector(".pause-but").style.zIndex=10000  
+    e.stopPropagation()
+}
+)
+document.querySelector(".pause-but").addEventListener("click",(e) => {
+    document.querySelector(".pause-but").style.zIndex=0
+    document.querySelector(".play-but").style.zIndex=10000  
+    e.stopPropagation()
+}
+)
+
 
 
