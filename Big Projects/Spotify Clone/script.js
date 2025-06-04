@@ -150,9 +150,12 @@ document.querySelector(".cross-box").addEventListener("click",() => {
 }
 )
 document.querySelector(".play-but").addEventListener("click",(e) => {
+    let audio =document.querySelector("#audio")
     document.querySelector(".play-but").style.zIndex=0
     document.querySelector(".pause-but").style.zIndex=10000  
+    audio.play()
     e.stopPropagation()
+
 }
 )
 document.querySelector(".pause-but").addEventListener("click",(e) => {
